@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+    font-family: Panthera;
+    src: url(./Fonts/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: Wakanda-forever;
+    src: url(./Fonts/WakandaFanther-JRpp7.ttf);
+}
+@font-face {
+    font-family: Beyno;
+    src: url(./Fonts/BEYNO.ttf);
+}
+
+:root{
+    --violet--:#3D2DA6;
+    --bleu--: #07338c;
+    --blue--: #021740;
+    --pink--: #DF99F2;
+    --pink-light--:#F2CEF2;
+    --violet-light--: #9E91B7;
+    --white--:#FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Panthera;
+    font-size: 68px;
+}
+
+h2{
+    font-family: Wakanda forever;
+    font-size: 43px;
+}
+
+q{
+    font-size: 14px;
+}
+
+body{
+   background-image: url(./Assets/All\ pages/arrière_plan.png);
+   color: white;
+   font-family: Cantarell;
+   font-size: 16px;
+}
+
+.container{
+    width: 80%; 
+    margin: 0 auto;
+}
+   
+
+/* header*/
+header{
+    max-width: 80%;
+    margin-right:auto;
+    margin-left: auto;
+    font-family: Beyno;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    padding: 30px 0 10px;
+}
+
+nav .logo{
+    width: 170px
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: var(--violet--);
+}
+
+.logo:hover{
+    color: var(--violet--);
+}
+
+/* Design de la section première page*/
+.content{
+    background-image: url(./Assets/Accueil/Pantherhome1..png);
+  }
+  
+}
+/*deuxième section*/
+.personnage-black{
+    display: block;
+    position: relative;
+    justify-content: space-between
+}
+.personnage-item{
+    display: flex;
+    background-color: var(--blue--);
+    justify-content: center
+}
+
+/*La troisième section*/
+.histoire .flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .histoire .flex-left {
+    width: 75%;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    display: grid;
+    place-items: center;
+  }
+  
+  .histoire .flex-right {
+    width: 25%;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    display: grid;
+    place-items: center;
+  }
