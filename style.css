@@ -17,9 +17,9 @@
     --bleu--: #07338c;
     --blue--: #021740;
     --pink--: #DF99F2;
-    --pink-light--:#F2CEF2;
-    --violet-light--: #9E91B7;
-    --white--:#FFFFFF;
+    --pink-light--:#cfc9cf;
+    --violet-light--: #c6bfd3;
+    --white--:#faf4f4;
 }
 
 *{
@@ -78,13 +78,14 @@ nav .logo{
 
 nav ul{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 40px;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
 }
 
 nav ul li{
     list-style: none;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 nav ul li a{
@@ -100,12 +101,20 @@ nav ul li a:hover{
     color: var(--violet--);
 }
 
-/* Design de la section première page*/
-.content{
-    background-image: url(./Assets/Accueil/Pantherhome1..png);
-  }
-  
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 60px;
+    top: 230px;
 }
+
+
+/* Design de la section première page*/
+
+    
+
 /*deuxième section*/
 .personnage-black{
     display: block;
@@ -142,3 +151,98 @@ nav ul li a:hover{
     display: grid;
     place-items: center;
   }
+
+
+  /*La quatrième section concernant le formulaire*/
+.form{
+    background: linear-gradient(
+       80deg, var(--white--), var(--pink-light--)
+    ) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    height: 320px;
+    border-radius: 20px;
+    border-left: 1px solid var(--white--);
+    border-top: 1px solid var(--white--);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+}
+
+h2{
+    color: var(--blue--);
+    font-weight: 500;
+}
+
+p{
+    color: var(--blue--);
+}
+
+placeholder{
+    color: var(--blue--);
+}
+
+input{
+    background: linear-gradient(
+        80deg, var(--white--), var(--pink-light--)
+     ) ;
+    border-color: var(--blue--);
+    border-width: 1px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    padding: 1rem;
+    width: 200px;
+    margin-bottom: 2px;
+}
+
+input [button]{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 150px;
+    background: var(--pink--);
+}
+
+#contact{
+    background: url(./Assets/Accueil/Pantherhome7.png);
+    background-size: cover;
+}
+
+  /* Footer */
+footer{
+    margin-top: 162px;
+    background: url(./Assets/All\ pages/back_footer.png);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+footer h3{
+    display: flex;
+    font-size: 22px;
+    letter-spacing: 28%;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: auto 50px 0;
+    display: flex;
+}
+
+footer .social item{
+    padding: 15px;
+}
+
+footer .legal-footer{
+    display: flex;
+}
