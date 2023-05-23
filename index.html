@@ -16,9 +16,9 @@
                 <img src="./Assets/All pages/icon_MARVEL.png" alt="">
             </a>
             <ul>
-                <li><a href="#">ACCEUIL</a></li>
-                <li><a href="#">WAKANDA</a></li>
-                <li><a href="#">ENIGME</a></li>
+                <li><a href="./index.html">ACCEUIL</a></li>
+                <li><a href="./wakanda.html">WAKANDA</a></li>
+                <li><a href="./enigme.html">ENIGME</a></li>
             </ul>
         </nav>
 </header>
@@ -35,25 +35,27 @@
 <!-- La première section de la page-->
 <section id="hero">
     <div class="container">
-        <div class="content">
+        <div class="div1">
             <h1>
                 BLACK PANTHER
             </h1>
             <h2>
                 WAKANDA FOREVER
             </h2>
-            <p>
-                En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
-                hommage aux cultures africaine et afro américaine. On y évoque le
-                racisme, la colonisation et les violences contre les afro américains. 
+            <p class="text-content">
+                En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend <br>
+                hommage aux cultures africaine et afro américaine. On y évoque le <br>
+                racisme, la colonisation et les violences contre les afro américains. <br>
             </p>
-           <p>
+           <p class="text-content">
             Ce film marque tout une génération, c’est 100% africain et c’est parfait .
            </p>
            <span>
             Voir plus >
            </span>
+           <img src="./Assets/Accueil/Pantherhome1..png" alt="">
         </div>
+
     </div>
 </section>
 
@@ -107,9 +109,8 @@
 <!-- La troisième section concernant le prince et le héros vengeur-->
 <section id="histoire">
     <div class="container">
-        <div class="flex-container">
-            <div class="flex-left">
-                <div class="histoire-tchalla">
+            <div class="histoire-tchalla">
+                <div>
                     <h3>
                         Naissance d’un prince
                     </h3>
@@ -197,16 +198,17 @@
                 </div>
             </div>
            
-            <div class="flex-right">
+           <div class="flex-right">
                 <div>
                     <img src="./Assets/Accueil/Pantherhome5.png" alt="">
                 </div>
-                <div>
-                    <h3>T’Challa</h3>
-                    <div class="cta">
-                        <a class="btn" href="#">Black Panther </a>
-                        <a class="btn" href="#">Roi du Wakanda</a>
-                        <a class="btn" href="#">En vie</a>
+                <div class="challa">
+                    <div>
+                        <h4>T’Challa</h4>
+                        <div class="cta">
+                            <a class="btn" href="#">Black Panther </a>
+                            <a class="btn" href="#">Roi du Wakanda</a>
+                            <a class="btn" href="#">En vie</a>
                     </div>
                     <div>
                         <ul>
@@ -218,12 +220,12 @@
                             <li> Réalité : Terre-199999</li>
                         </ul>
                     </div>
-                </div>
+                <div>
+
                 <div>
                     <img src="./Assets/Accueil/Pantherhome6.png" alt="">
-                </div>
-            </div>       
-        </div>   
+                </div    
+            </div>
     </div>
 </section>
 
@@ -231,12 +233,12 @@
 <section id="contact">
 <div class="container">
     <div class="form">
-        <p>Besoin de l’intervention du Wakanda ?</p>
-        <h2>Contactez nous !</h2>
+        <p>Besoin de l’intervention du Wakanda ?</p><br>
+        <h2 class="titre">Contactez nous !</h2><br>
         <form action="">
             <input type="text" placeholder="Nom"><br>
             <input type="email" placeholder="Email"><br>
-            <input type="text" placeholder="Message"><br> 
+           <textarea name="Message" id="" cols="30" rows="10"placeholder="Message"></textarea> <br> 
             <input type="button" value="ENVOYER">
         </form>
     </div>

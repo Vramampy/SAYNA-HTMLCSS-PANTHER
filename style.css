@@ -13,10 +13,10 @@
 }
 
 :root{
-    --violet--:#3D2DA6;
+    --violet--:#5e51b8;
     --bleu--: #07338c;
     --blue--: #021740;
-    --pink--: #DF99F2;
+    --pink--: #e7caf0;
     --pink-light--:#cfc9cf;
     --violet-light--: #c6bfd3;
     --white--:#faf4f4;
@@ -31,11 +31,23 @@
 h1{
     font-family: Panthera;
     font-size: 68px;
+    color: var(--violet--);
 }
 
 h2{
-    font-family: Wakanda forever;
+    font-family: Wakanda-forever;
     font-size: 43px;
+    color: var(--violet--);
+}
+
+h3{
+    font-family: Beyno;
+    font-size: 32px;
+    color: var(--violet--);
+}
+
+h4{
+    color: var(--violet--);
 }
 
 q{
@@ -66,7 +78,6 @@ header{
 
 nav{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     width: 60%;
     padding: 30px 0 10px;
@@ -81,6 +92,7 @@ nav ul{
     justify-content: space-between;
     padding: 30px 0;
     align-items: center;
+    text-align: right;
 }
 
 nav ul li{
@@ -112,48 +124,91 @@ nav ul li a:hover{
 
 
 /* Design de la section première page*/
+.div1, .div2{
+    display: inline-block;
+}
 
-    
+#hero .h2, h1{
+    color: var(--violet--);
+}
+.h3{
+    color: var(--violet--);
+}
+
+#div1 .text-content{
+    text-align: left;
+}
+
+span{
+    text-decoration: underline;
+}
+
+
+#hero img{
+    width: 950px;
+}
+
+.div1{
+    display: flexbox;
+    top: 300px;
+    bottom: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
 
 /*deuxième section*/
 .personnage-black{
-    display: block;
-    position: relative;
-    justify-content: space-between
+    display: inline-block;
+    width: 40%;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
 }
+
 .personnage-item{
-    display: flex;
-    background-color: var(--blue--);
-    justify-content: center
+    display: inline-block;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ 
+/*Troisième section*/
+.histoire-tchalla{
+    display: inline-block;
+    width: 60%;
+    padding: 10px;
 }
 
-/*La troisième section*/
-.histoire .flex-container {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-  }
+.flex-right{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+}
 
-  .histoire .flex-left {
-    width: 75%;
-    margin: 5px;
-    padding: 5px;
-    border: none;
-    display: grid;
-    place-items: center;
-  }
-  
-  .histoire .flex-right {
-    width: 25%;
-    margin: 5px;
-    padding: 5px;
-    border: none;
-    display: grid;
-    place-items: center;
-  }
+.flex-right .h3{
+    text-align: center;
+}
+.challa{ 
+    background-color: var(--white--);
+    margin-top: 10px;
+}
 
-
-  /*La quatrième section concernant le formulaire*/
+.btn{
+    text-decoration: none;
+    color: var(--white--);
+    font-size: 16px;
+    margin-top: 10px;
+    background: var(--violet--);
+    justify-content: space-between;
+}
+/*La quatrième section concernant le formulaire*/
+#contact .titre{
+    font-family: Cantarell;
+    font-size: 30px;
+    font-weight:bold;
+}
 .form{
     background: linear-gradient(
        80deg, var(--white--), var(--pink-light--)
@@ -162,7 +217,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    height: 320px;
+    height: 500px;
     border-radius: 20px;
     border-left: 1px solid var(--white--);
     border-top: 1px solid var(--white--);
@@ -172,26 +227,13 @@ nav ul li a:hover{
     -moz-backdrop-filter: blur(10px);
 }
 
-h2{
-    color: var(--blue--);
-    font-weight: 500;
-}
-
-p{
-    color: var(--blue--);
-}
-
-placeholder{
-    color: var(--blue--);
-}
-
-input{
+input, textarea{
     background: linear-gradient(
         80deg, var(--white--), var(--pink-light--)
      ) ;
     border-color: var(--blue--);
     border-width: 1px;
-    border-radius: 50px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
@@ -220,29 +262,5 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center ;
-}
-
-footer h3{
-    display: flex;
-    font-size: 22px;
-    letter-spacing: 28%;
-}
-
-footer .text-footer{
-    text-align: center;
-    font-size: 14px;
-}
-
-footer .social-footer{
-    text-align: center;
-    margin: auto 50px 0;
-    display: flex;
-}
-
-footer .social item{
-    padding: 15px;
-}
-
-footer .legal-footer{
-    display: flex;
+    flex-direction: column;
 }
