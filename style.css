@@ -158,21 +158,12 @@ span{
 }
 
 /*deuxième section*/
-.personnage-black{
+.personnage-black div{
     display: inline-block;
-    width: 40%;    
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
+    height: 100%;
+    width: calc(100% / 3);
 }
 
-.personnage-item{
-    display: inline-block;
-    width: 40%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
-}
  
 /*Troisième section*/
 .histoire-tchalla{
@@ -192,7 +183,29 @@ span{
 }
 .challa{ 
     background-color: var(--white--);
+    height:500px;
     margin-top: 10px;
+}
+
+.challa ul{
+    color: var(--blue--)
+}
+
+.challa span{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.challa h4{
+    text-align: center;
+}
+
+.challa .cta{
+    text-align: center;
+}
+
+.challa{
+    margin: 0 auto;
 }
 
 .btn{
@@ -203,11 +216,17 @@ span{
     background: var(--violet--);
     justify-content: space-between;
 }
+
 /*La quatrième section concernant le formulaire*/
 #contact .titre{
     font-family: Cantarell;
     font-size: 30px;
     font-weight:bold;
+}
+#contact{
+    background-image:url(./Assets/Accueil/Pantherhome7.png) ;
+    height: 800px;
+    background-size: cover;
 }
 .form{
     background: linear-gradient(

@@ -31,11 +31,19 @@
 h1{
     font-family: Panthera;
     font-size: 68px;
+    color: var(--violet--);
 }
 
 h2{
     font-family: Wakanda forever;
     font-size: 43px;
+    color: var(--violet--);
+}
+
+h3{
+    font-family: Beyno;
+    font-size: 32px;
+    color: var(--violet--);
 }
 
 q{
@@ -99,3 +107,44 @@ nav ul li a:hover{
 .logo:hover{
     color: var(--violet--);
 }
+
+/* La première section de la page*/
+#HEROS{
+    background: url(./Assets/Wakanda/Pantherwakanda1.png);
+    height: 800px;
+    background-size: cover;
+    display: flex;  
+    text-align: justify; 
+}
+.container.p{
+    text-align: left
+}
+
+/* La deuxième partie de la page */
+.div1{
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+}
+
+.div2{
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+}
+
+.div1, .div2 {
+    text-align:justify;
+}
+
+
+ /* Footer */
+ footer{
+    margin-top: 162px;
+    background: url(./Assets/All\ pages/back_footer.png);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+ }
+    
